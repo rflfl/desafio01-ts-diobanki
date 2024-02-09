@@ -1,3 +1,4 @@
+import { AdditinalAccount } from './class/AdditionalAccount'
 import { CompanyAccount } from './class/CompanyAccount'
 import { PeopleAccount } from './class/PeopleAccount'
 
@@ -14,3 +15,7 @@ companyAccount.withdraw(30)
 console.log(companyAccount.getBalance())
 companyAccount.getLoan(100)
 console.log(companyAccount.getBalance())
+
+const additionalAccount: AdditinalAccount = new AdditinalAccount('Rafael', 30)
+additionalAccount.deposit(60)
+console.log(additionalAccount.getBalance())
